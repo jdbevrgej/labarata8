@@ -1,0 +1,38 @@
+{
+  "name": "jdbevrgej/labarata8",
+  "description": "project",
+  "type": "project",
+  "license": "-",
+  "authors": [
+    {
+      "name": "Oleja",
+	  "email": "oleja@gmail.com"
+    }
+  ],
+  
+
+  "minimum-stability": "dev",
+
+	"scripts": {
+    "post-install-cmd": [
+        "git symbolic-ref --short -q HEAD>version"
+    ]
+  },
+  
+  "require": {
+    "jdbevrgej/lab10lb": "1.0"
+  },
+
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/rok9ru/trpo-core"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/jdbevrgej/lab10lb.git"
+    }
+  ]
+  
+}
+

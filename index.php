@@ -4,18 +4,22 @@ use Malahov\MyLog;
 use Malahov\LoginovException;
 use Malahov\QuEquation;
 
-include "core/core/EquationInterface.php";
+/*include "core/core/EquationInterface.php";
 include "core/core/LogAbstract.php";
 include "core/core/LogInterface.php";
 include "Malahov/MyLog.php";
 include "Malahov/Equation.php";
 include "Malahov/QuEquation.php";
-include "Malahov/MalahovException.php";
+include "Malahov/MalahovException.php";*/
+require_once __DIR__ . './vendor/autoload.php';
 
 ini_set("display_errors", 1);
 error_reporting(-1);
 
 try {
+	if(!is_dir("log")) {
+        mkdir("log", 0700);
+    }
     MyLog::log("Версия программы: " . trim(file_get_contents('version')) );
     $b = new QuEquation();
     $values = array();
