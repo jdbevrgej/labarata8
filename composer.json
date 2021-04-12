@@ -20,7 +20,7 @@
   },
   
   "require": {
-    "jdbevrgej/lab10lb": "3.0"
+    "jdbevrgej/lab10lb": "2.0"
   },
 
   "repositories": [
